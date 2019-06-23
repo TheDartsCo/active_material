@@ -18,4 +18,11 @@ WebFontConfig = {
   wf.async = 'true';
   var s = document.getElementsByTagName('script')[0];
   s.parentNode.insertBefore(wf, s);
+
+  var mi = document.createElement('link');
+  mi.href = ('https:' == document.location.protocol ? 'https' : 'http') +
+    '://fonts.googleapis.com/icon?family=Material+Icons';
+  mi.rel = 'stylesheet';
+  var l = document.getElementsByTagName('link')[0];
+  l.parentNode.insertBefore(mi, l);
 })();

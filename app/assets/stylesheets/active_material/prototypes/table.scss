@@ -114,3 +114,9 @@ $am-table-border-color: am-color(divider);
   position: relative;
   width: am-unit(6);
 }
+
+@mixin col-action {
+  vertical-align: middle;
+  font-family: 'Material Icons';
+  font-feature-settings: 'liga';
+}
